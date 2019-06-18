@@ -12,26 +12,29 @@ void bubble_sort(int *array, size_t size)
 	unsigned int idx, stop = 0, c = 0, nord = 0;
 	int aux = 0;
 
-	stop = (size - 1) * (size - 1);
-	for (idx = 0; idx < (size - 1); idx++)
+	if (size > 1)
 	{
-		c++;
-		if (array[idx] > array[idx + 1])
+		stop = (size - 1) * (size - 1);
+		for (idx = 0; idx < (size - 1); idx++)
 		{
-			aux = array[idx + 1];
-			array[idx + 1] = array[idx];
-			array[idx] = aux;
-			nord++;
-			print_array(array, size);
-		}
+			c++;
+			if (array[idx] > array[idx + 1])
+			{
+				aux = array[idx + 1];
+				array[idx + 1] = array[idx];
+				array[idx] = aux;
+				nord++;
+				print_array(array, size);
+			}
 
-		if (idx == size - 2 && nord > 0)
-		{
-			idx = -1;
-			nord = 0;
-		}
+			if (idx == size - 2 && nord > 0)
+			{
+				idx = -1;
+				nord = 0;
+			}
 
-		if (c == stop)
-			break;
+			if (c == stop)
+				idx = size;
+		}
 	}
 }
