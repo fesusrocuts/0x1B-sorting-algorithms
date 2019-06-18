@@ -7,7 +7,7 @@
  * @size: Number of elements in @array
  */
 
-void bubble_sort(int *array, unsigned int size)
+void bubble_sort(int *array, size_t size)
 {
 	unsigned int idx, stop = 0, c = 0, nord = 0;
 	int aux = 0;
