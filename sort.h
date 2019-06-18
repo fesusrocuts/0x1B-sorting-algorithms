@@ -1,6 +1,7 @@
 #ifndef _H_
 #define _H_
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * struct listint_s - Doubly linked list node
  *
