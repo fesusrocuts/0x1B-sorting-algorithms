@@ -9,12 +9,11 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	unsigned int idx, stop = 0, c = 0, nord = 0;
+	unsigned int idx, c = 0, nord = 0;
 	int aux = 0;
 
 	if (size > 1)
 	{
-		stop = (size - 1) * (size - 1);
 		for (idx = 0; idx < (size - 1); idx++)
 		{
 			c++;
@@ -26,15 +25,11 @@ void bubble_sort(int *array, size_t size)
 				nord++;
 				print_array(array, size);
 			}
-
 			if (idx == size - 2 && nord > 0)
 			{
 				idx = -1;
 				nord = 0;
 			}
-
-			if (c == stop)
-				idx = size;
 		}
 	}
 }
