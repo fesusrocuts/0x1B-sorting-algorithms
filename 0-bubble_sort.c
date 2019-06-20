@@ -4,7 +4,10 @@
  * bubble_sort - Function that sorts an array of integers
  *
  * @array: The array to be sort
+ *
  * @size: Number of elements in @array
+ *
+ * Return: Nothing
  */
 void bubble_sort(int *array, size_t size)
 {
