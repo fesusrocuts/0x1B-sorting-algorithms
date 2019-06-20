@@ -1,2 +1,3 @@
-# 0x1B-sorting-algorithms
-Sorting algorithms &amp; Big O
+## 0x1B-sorting-algorithms
+
+Sorting algorithms & amp; Big O
