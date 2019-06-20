@@ -13,7 +13,7 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	n_a = *list;
-	while (n_a->next != NULL)
+	while (n_a != NULL)
 	{
 		n_b = n_a->next;
 		while (n_a->prev != NULL && n_a->prev->n > n_a->n)
